@@ -3,3 +3,13 @@
 ##Счастливым билетом называют такой билет с шестизначным номером, где сумма первых трех цифр равна сумме последних трех. Т.е.
 ##билет с номером 385916 – счастливый, т.к. 3+8+5=9+1+6. Вам требуется написать программу, которая проверяет счастливость билета.
 ##*Пример:* 385916 -> yes 123456 -> no
+
+TicketNumber = input('Введите шестизначное число: ')
+if len(TicketNumber)!=6:
+    print('Вы ввели не шестизначный номер билета')
+else:    
+      SumOne = int(TicketNumber[0]) + int(TicketNumber[1]) + int(TicketNumber[2])
+      SumTwo = int(TicketNumber[3]) + int(TicketNumber[4]) + int(TicketNumber[5])
+      if SumOne==SumTwo:
+        print('YES')
+      else: print('NO')   
