@@ -10,3 +10,32 @@
 # 4 -> 1 2 3 4
 # 9
 
+from itertools import cycle
+
+number_bushes = int(input('Введите сколько кустов на грядке: '))
+
+List = []
+for i in range(1, number_bushes + 1):
+    List.append(i)
+
+print(List)
+
+summa_max = 0
+
+for i in range(number_bushes + 2):
+    summa = sum((List[i:i+3]))
+    if summa > summa_max:
+        summa_max = summa          
+
+print()
+print(f' Максимальная сумма собранных ягод за один раз: {summa_max} ')  
+
+
+
+
+
+
+
+
+
+
