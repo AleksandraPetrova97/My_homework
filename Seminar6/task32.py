@@ -6,7 +6,7 @@ from random import randint
 
 def index_element(list_n, minimum, maximum):
     for i in range(len(list_n)):
-        if list_1[i] >= minimum and list_1[i] <= maximum:
+        if minimum <= list_1[i] <= maximum:
             print(i, end= " ")
      
 list_1 = [randint(1,10) for i in range(int(input('Введите количество элементов списка: ')))]
