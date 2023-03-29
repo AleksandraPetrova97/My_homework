@@ -3,7 +3,13 @@
 # Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d.
 # Каждое число вводится с новой строки.
 
-number_a = int(input('Введите первый элемент прогрессии: '))
-number_n = int(input('Введите разность между элементами: '))
-number_d = int(input('Введите количество элементов: '))
+def arithmetic_progression(a,d,n):
+    for i in range(n):
+        print(a + i * d, end=' ')
 
+number_a = int(input('Введите первый элемент прогрессии: '))
+number_d  = int(input('Введите разность между элементами: '))
+number_n = int(input('Введите количество элементов: '))
+
+
+arithmetic_progression(number_a, number_d, number_n)
