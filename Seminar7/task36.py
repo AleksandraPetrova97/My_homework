@@ -11,8 +11,6 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
 
-
-
 def print_operation_table(operation, num_rows, num_columns):
     for i in range(1, num_rows+1):
         spisok = list()
@@ -22,6 +20,5 @@ def print_operation_table(operation, num_rows, num_columns):
     
 num_rows = int(input('Введите количество строк: '))
 num_columns = int(input('Введите количество столбцов: '))
-
 
 print_operation_table(lambda x, y: x*y, num_rows, num_columns )
